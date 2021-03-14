@@ -40,7 +40,7 @@
           <div class="textarea-container">
             <textarea class="form-control" rows="4" cols="80" name="message" placeholder="Escribe un comentario..." required></textarea>
           </div>
-          <div class="g-recaptcha" data-sitekey="<?php echo SITE_KEY; ?>"></div>
+          <div class="g-recaptcha" data-sitekey="<?php echo $SITE_KEY; ?>"></div>
           <br />
 
           <div class="send-button">

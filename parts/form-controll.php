@@ -41,7 +41,7 @@ require('constant.php');
 		
 		require('recaptcha/src/autoload.php');		
 		
-		$recaptcha = new \ReCaptcha\ReCaptcha(SECRET_KEY);
+		$recaptcha = new \ReCaptcha\ReCaptcha($SECRET_KEY);
 
 		$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
@@ -61,7 +61,7 @@ require('constant.php');
 	    $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_name .', thank you for the comments. We will get back to you shortly.'));
 	    die($output);
 	} else {
-	    $output = json_encode(array('type'=>'error', 'text' => 'Unable to send email, please contact'.SENDER_EMAIL));
+	    $output = json_encode(array('type'=>'error', 'text' => 'Unable to send email, please contact'.$SENDER_EMAIL));
 	    die($output);
 	}
 }
