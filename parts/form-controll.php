@@ -1,57 +1,68 @@
 <?php
+if($_POST)
+{
+require('constant.php');
+    
+    $user_name      = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+    $user_email     = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $user_phone     = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
+    $content   = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+    $subject   = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
+    
+    if(empty($user_name)) {
+		$empty[] = "<b>Name</b>";		
+	}
+	if(empty($user_email)) {
+		$empty[] = "<b>Email</b>";
+	}
+	if(empty($user_phone)) {
+		$empty[] = "<b>Phone Number</b>";
+	}	
+  if(empty($subject)) {
+		$empty[] = "<b>Subject</b>";
+	}
 
-// grab recaptcha library
-require_once "parts/recaptchalib.php";
-// your secret key
-$secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
-// empty response
-$response = null;
-// check secret key
-$reCaptcha = new ReCaptcha($secret);
+	if(empty($content)) {
+		$empty[] = "<b>Comments</b>";
+	}
+	
+	if(!empty($empty)) {
+		$output = json_encode(array('type'=>'error', 'text' => implode(", ",$empty) . ' Required!'));
+        die($output);
+	}
+	
+	if(!filter_var($user_email, FILTER_VALIDATE_EMAIL)){ //email validation
+	    $output = json_encode(array('type'=>'error', 'text' => '<b>'.$user_email.'</b> is an invalid Email, please correct it.'));
+		die($output);
+	}
+	
+	//reCAPTCHA validation
+	if (isset($_POST['g-recaptcha-response'])) {
+		
+		require('recaptcha/src/autoload.php');		
+		
+		$recaptcha = new \ReCaptcha\ReCaptcha(SECRET_KEY);
 
-$name = $email = $subject = $phone = $message = "";
+		$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $phone = test_input($_POST["phone"]);
-  $subject = test_input($_POST["subject"]);
-  $message = test_input($_POST["message"]);
-
-  $response = $reCaptcha->verifyResponse(
-      $_SERVER["REMOTE_ADDR"],
-      $_POST["g-recaptcha-response"]
-  );
-
+		  if (!$resp->isSuccess()) {
+				$output = json_encode(array('type'=>'error', 'text' => '<b>Captcha</b> Validation Required!'));
+				die($output);				
+		  }	
+	}
+	
+	$toEmail = "contacto@philippeparis.net";
+	$mailHeaders = "From: " . $user_name . "<" . $user_email . ">\r\n";
+  $mailBody = "User Name: " . $user_name . "\n";
+	$mailBody .= "User Email: " . $user_email . "\n";
+	$mailBody .= "Phone: " . $user_phone . "\n";
+	$mailBody .= "Content: " . $content . "\n";
+	if (mail($toEmail, "Contact Mail", $mailBody, $mailHeaders)) {
+	    $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_name .', thank you for the comments. We will get back to you shortly.'));
+	    die($output);
+	} else {
+	    $output = json_encode(array('type'=>'error', 'text' => 'Unable to send email, please contact'.SENDER_EMAIL));
+	    die($output);
+	}
 }
-
-
-if ($response != null && $response->success) {
-  
-  $mailTo = "contacto@philippeparis.net";
-  $headers = "From: " . $email;
-  $txt = "Formulario de " . $name . ".\n\nTeléfono " . $phone . "\n\n" . $message;
-  
-  mail($mailTo, $subject, $txt, $headers);
-  // Cambios solicitados acá
-  $namelog = date("Ymd") . ".csv";
-  $ip = get_ip_address();
-  $ua = $_SERVER['HTTP_USER_AGENT'];
-  $hora = date("d-m-Y H:i:s");
-  
-  $arr = array($hora, $ip, $ua, $name, $phone, $email, $subject, $message);
-  $contacto = implode("\t", $arr) . "\n";
-  file_put_contents($namelog, $contacto, FILE_APPEND | LOCK_EX);
-  // Fin de cambios
-  header("Location: ../gracias.php");
-
-
-} else {
-
-  echo ('falló');
-
-}
-
-
 ?>

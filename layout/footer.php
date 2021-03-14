@@ -38,6 +38,7 @@
 
 
 <script src='assets/js/api.js'></script>
+<script src="assets/js/main.js" type="text/javascript"></script>
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/popper.min.js" type="text/javascript"></script>
