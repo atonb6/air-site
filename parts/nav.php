@@ -11,7 +11,7 @@
                     <span class="navbar-toggler-bar bottom-bar"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="assets/img/blurred-image-1.jpg">
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="https://www.airclima.cl/assets/img/blurred-image-1.jpg">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#servicios">Servicios</a>

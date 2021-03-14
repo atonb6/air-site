@@ -52,22 +52,22 @@
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split muro</p>
                                     <h5>Modelo <b>Split muro On/Off</b></h5>
-                                    <img src="assets/img/muro01.png" class="img-raised" alt="Split muro">
+                                    <img src="https://www.airclima.cl/assets/img/muro01.png" class="img-raised" alt="Split muro">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split muro</p>
                                     <h5>Modelo <b>Muro Cool Desing Inv</b></h5>
-                                    <img src="assets/img/muro02.png" alt="Split muro" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/muro02.png" alt="Split muro" class="img-raised">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split muro</p>
                                     <h5>Modelo <b>Split muro inverter</b></h5>
-                                    <img src="assets/img/muro03.png" class="img-raised" alt="Split muro">
+                                    <img src="https://www.airclima.cl/assets/img/muro03.png" class="img-raised" alt="Split muro">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split muro</p>
                                     <h5>Modelo <b>Multi split muro</b></h5>
-                                    <img src="assets/img/muro04.png" alt="Split muro" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/muro04.png" alt="Split muro" class="img-raised">
                                 </div>
                             </div>
                         </div>
@@ -79,12 +79,12 @@
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split Piso/Cielo On/Off</p>
                                     <h5>Modelo <b>Piso/Cielo On/Off</b></h5>
-                                    <img src="assets/img/piso-cielo01.png" alt="Split Piso Cielo" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/piso-cielo01.png" alt="Split Piso Cielo" class="img-raised">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split Piso/Cielo On/Off</p>
                                     <h5>Modelo <b>Piso/Cielo inverter</b></h5>
-                                    <img src="assets/img/piso-cielo02.png" alt="Split Piso Cielo" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/piso-cielo02.png" alt="Split Piso Cielo" class="img-raised">
                                 </div>
                             </div>
                         </div>
@@ -96,22 +96,22 @@
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split ducto</p>
                                     <h5>Modelo <b>Split ducto On/Off</b></h5>
-                                    <img src="assets/img/split-ducto01.png" alt="Split ducto" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/split-ducto01.png" alt="Split ducto" class="img-raised">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split ducto</p>
                                     <h5>Modelo <b>Split ducto inverter</b></h5>
-                                    <img src="assets/img/split-ducto02.png" alt="Split ducto" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/split-ducto02.png" alt="Split ducto" class="img-raised">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split ducto</p>
                                     <h5>Modelo <b>Split ducto On/Off N2</b></h5>
-                                    <img src="assets/img/split-ducto03.png" alt="Split ducto" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/split-ducto03.png" alt="Split ducto" class="img-raised">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split ducto</p>
                                     <h5>Modelo <b>Split Ducto Inverter N2</b></h5>
-                                    <img src="assets/img/split-ducto04.png" alt="Split ducto" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/split-ducto04.png" alt="Split ducto" class="img-raised">
                                 </div>
                             </div>
                         </div>
@@ -123,12 +123,12 @@
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split cassette</p>
                                     <h5>Modelo <b>Cassette 4 vías On/Off</b></h5>
-                                    <img src="assets/img/cassette01.png" class="img-raised" alt="Split cassette">
+                                    <img src="https://www.airclima.cl/assets/img/cassette01.png" class="img-raised" alt="Split cassette">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Split cassette</p>
                                     <h5>Modelo <b>Cassette 4 vías Inverter</b></h5>
-                                    <img src="assets/img/cassette02.png" class="img-raised" alt="Split cassette">
+                                    <img src="https://www.airclima.cl/assets/img/cassette02.png" class="img-raised" alt="Split cassette">
                                 </div>
                             </div>
                         </div>
@@ -140,17 +140,17 @@
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Portatil</p>
                                     <h5>Modelo <b>EAA Frio/Calor 8.000 BTU</b></h5>
-                                    <img src="assets/img/portatil_01.png" class="img-raised" alt="Portatil">
+                                    <img src="https://www.airclima.cl/assets/img/portatil_01.png" class="img-raised" alt="Portatil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Portatil</p>
                                     <h5>Modelo <b>EAA Frio/Calor 12.000 BTU</b></h5>
-                                    <img src="assets/img/portatil_02.png" class="img-raised" alt="Portatil">
+                                    <img src="https://www.airclima.cl/assets/img/portatil_02.png" class="img-raised" alt="Portatil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Portatil</p>
                                     <h5>Modelo <b>EAA Frio/Calor 14.000 BTU</b></h5>
-                                    <img src="assets/img/portatil_03.png" class="img-raised" alt="Portatil">
+                                    <img src="https://www.airclima.cl/assets/img/portatil_03.png" class="img-raised" alt="Portatil">
                                 </div>
 
                             </div>
@@ -164,47 +164,47 @@
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Frío/calor manual changeover</b></h5>
-                                    <img src="assets/img/termost_01.png" class="img-raised" alt="Termost fancoil">
+                                    <img src="https://www.airclima.cl/assets/img/termost_01.png" class="img-raised" alt="Termost fancoil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Honeywell digital configurable horizontal</b></h5>
-                                    <img src="assets/img/termost_02.png" alt="Termost fancoil" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/termost_02.png" alt="Termost fancoil" class="img-raised">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Honeywell digital configurable vertical</b></h5>
-                                    <img src="assets/img/termost_03.png" alt="Termost fancoil" class="img-raised">
+                                    <img src="https://www.airclima.cl/assets/img/termost_03.png" alt="Termost fancoil" class="img-raised">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Frío/calor auto changeover</b></h5>
-                                    <img src="assets/img/termost_04.png" class="img-raised" alt="Termost fancoil">
+                                    <img src="https://www.airclima.cl/assets/img/termost_04.png" class="img-raised" alt="Termost fancoil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Honeywell digital configurable horizontal</b></h5>
-                                    <img src="assets/img/termost_05.png" class="img-raised" alt="Termost fancoil">
+                                    <img src="https://www.airclima.cl/assets/img/termost_05.png" class="img-raised" alt="Termost fancoil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Honeywell digital configurable vertical</b></h5>
-                                    <img src="assets/img/termost_06.png" class="img-raised" alt="Termost fancoil">
+                                    <img src="https://www.airclima.cl/assets/img/termost_06.png" class="img-raised" alt="Termost fancoil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Digital frío/calor auto changeover</b></h5>
-                                    <img src="assets/img/termost_07.png" class="img-raised" alt="Termost fancoil">
+                                    <img src="https://www.airclima.cl/assets/img/termost_07.png" class="img-raised" alt="Termost fancoil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Honeywell digital programablee vertical</b></h5>
-                                    <img src="assets/img/termost_08.png" class="img-raised" alt="Termost fancoil">
+                                    <img src="https://www.airclima.cl/assets/img/termost_08.png" class="img-raised" alt="Termost fancoil">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Termost fancoil</p>
                                     <h5>Modelo <b>Change man Honeywell</b></h5>
-                                    <img src="assets/img/termost_09.png" class="img-raised" alt="Termost fancoil">
+                                    <img src="https://www.airclima.cl/assets/img/termost_09.png" class="img-raised" alt="Termost fancoil">
                                 </div>
                             </div>
                         </div>
@@ -218,12 +218,12 @@
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Ventana</p>
                                     <h5>Modelo <b>EAA 9K BTU R32</b></h5>
-                                    <img src="assets/img/ventana01.png" class="img-raised" alt="Ventana">
+                                    <img src="https://www.airclima.cl/assets/img/ventana01.png" class="img-raised" alt="Ventana">
                                 </div>
                                 <div class="col-md-6 prodimg">
                                     <p class="smalltwo">Ventana</p>
                                     <h5>Modelo <b>EEA 12K BTU R410</b></h5>
-                                    <img src="assets/img/ventana02.png" class="img-raised" alt="Ventana">
+                                    <img src="https://www.airclima.cl/assets/img/ventana02.png" class="img-raised" alt="Ventana">
                                 </div>
 
                             </div>
