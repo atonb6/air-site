@@ -6,70 +6,54 @@ require_once "recaptchalib.php";
 
 // your secret key
 $secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
- 
+
 // empty response
 $response = null;
- 
+
 // check secret key
 $reCaptcha = new ReCaptcha($secret);
 
 
-// if submitted check response
-if ($_POST["g-recaptcha-response"]) {
-  $response = $reCaptcha->verifyResponse(
-      $_SERVER["REMOTE_ADDR"],
-      $_POST["g-recaptcha-response"]
-  );
-}
+
 
 
 $name = $email = $subject = $phone = $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  
-  if (empty($_POST["name"])) {
-    $nameErr = "El nombre es requerido";
-  } else {
-    $name = test_input($_POST["name"]);
-    if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
-      $nameErr = "Sólo letras y espacios permitidos";
-    }
+
+
+  $name = test_input($_POST["name"]);
+  if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+    $nameErr = "Sólo letras y espacios permitidos";
   }
 
-  if (empty($_POST["email"])) {
-    $emailErr = "El email es requerido";
-  } else {
-    $email = test_input($_POST["email"]);
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Formateo invalido";
-    }
+
+  $email = test_input($_POST["email"]);
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $emailErr = "Formateo invalido";
   }
 
-  if (empty($_POST["phone"])) {
-    $phoneErr = "El teléfono es requerido";
-  } else {
-    $phone = test_input($_POST["phone"]);
-    if (!filter_var($phone, FILTER_VALIDATE_EMAIL)) {
-      $phoneErr = "Formateo de teléfono invalido";
-    }
+
+
+  $phone = test_input($_POST["phone"]);
+  if (!filter_var($phone, FILTER_VALIDATE_EMAIL)) {
+    $phoneErr = "Formateo de teléfono invalido";
   }
 
-  if (empty($_POST["subject"])) {
-    $subjectErr = "Debe agregar un asunto";
-  } else {
-    $subject = test_input($_POST["subject"]);
-  }
 
-  if (empty($_POST["message"])) {
-    $messageErr = "Debe agregar un mensaje";
-  } else {
-    $message = test_input($_POST["message"]);
-  }
 
-  if ($response != null && $response->success) {
-    echo "Hi " . $_POST["name"] . " (" . $_POST["email"] . "), thanks for submitting the form!";
-  } else {
-    
+  $subject = test_input($_POST["subject"]);
+
+
+
+  $message = test_input($_POST["message"]);
+
+  // if submitted check response
+  if ($_POST["g-recaptcha-response"]) {
+    $response = $reCaptcha->verifyResponse(
+      $_SERVER["REMOTE_ADDR"],
+      $_POST["g-recaptcha-response"]
+    );
   }
 }
 
@@ -115,6 +99,7 @@ $contacto = implode("\t", $arr) . "\n";
 file_put_contents($namelog, $contacto, FILE_APPEND | LOCK_EX);
 // Fin de cambios
 header("Location: gracias.html");
+echo "Hi " . $_POST["name"] . " (" . $_POST["email"] . "), thanks for submitting the form!";
 
 ?>
 
@@ -148,7 +133,7 @@ header("Location: gracias.html");
                 <!-- <i class="now-ui-icons users_circle-08"></i> -->
               </span>
             </div>
-            <input class="form-control" type="number" name="phone" placeholder="Teléfono" required>
+            <input class="form-control" type="number" name="phone" placeholder="56 9 1234 5678" min="10" max="11" placeholder="Teléfono" required>
           </div>
           <div class="input-group input-lg">
             <div class="input-group-prepend">
