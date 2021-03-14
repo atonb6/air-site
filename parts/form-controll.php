@@ -65,8 +65,7 @@ $arr = array($hora, $ip, $ua, $name, $phone, $email, $subject, $message);
 $contacto = implode("\t", $arr) . "\n";
 file_put_contents($namelog, $contacto, FILE_APPEND | LOCK_EX);
 // Fin de cambios
-header("Location: /gracias.php");
-echo "llegó";
+header("Location: ../gracias.php");
 echo "Hi " . $_POST["name"] . " (" . $_POST["email"] . "), thanks for submitting the form!";
 
 ?>

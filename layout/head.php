@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="https://www.airclima.cl/assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
         Air Clima
@@ -13,10 +13,10 @@
     <meta content="Servicio de excelencia en climatización en tu hogar y/o empresa" name="description">
     <meta content="Airclima | Excelencia en climatización" property="og:title">
     <meta content="Servicio de excelencia en climatización en tu hogar y/o empresa" property="og:description">
-    <meta content="https://www.airclima.cl/assets/img/og.png" property="og:image">
+    <meta content="assets/img/og.png" property="og:image">
     <meta content="Airclima | Excelencia en climatización" property="twitter:title">
     <meta content="Servicio de excelencia en climatización en tu hogar y/o empresa" property="twitter:description">
-    <meta content="https://www.airclima.cl/assets/img/og.png" property="twitter:image">
+    <meta content="assets/img/og.png" property="twitter:image">
     <meta property="og:type" content="website">
     <meta content="summary_large_image" name="twitter:card">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -25,11 +25,11 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- CSS Files -->
-    <link href="https://www.airclima.cl/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://www.airclima.cl/assets/css/now-ui-kit.css" rel="stylesheet" />
-    <link href="https://www.airclima.cl/assets/css/style-last.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/now-ui-kit.css" rel="stylesheet" />
+    <link href="assets/css/style-last.css" rel="stylesheet" />
     <!-- Facebook Pixel Code -->
     <script>
         ! function(f, b, e, v, n, t, s) {
@@ -90,17 +90,5 @@
         })(window, document, 'script', 'dataLayer', 'GTM-MFJLZV6');
     </script>
     <!-- End Google Tag Manager -->
-
-
-
-
-
-    <style>
-        .page-header.page-header-small {
-            min-height: 10vh !important;
-            max-height: 100vh !important;
-            height: auto;
-        }
-    </style>
 
 </head>

@@ -1,0 +1,60 @@
+.html{
+	scroll-behavior: smooth;
+}
+
+#waza {
+	display: block;
+	position: fixed;
+	float: right;
+	bottom: 50px;
+	right: 20px;
+	width: 80px;
+	height: 80px;
+	z-index: 9999;
+}
+.btn-blue {
+	/* background-color: #389FCC; */
+	background: rgb(56,159,204);
+	background: linear-gradient(90deg, rgba(56,159,204,1) 0%, rgba(189,16,24,1) 100%);
+}
+.no-border {
+	border: none !important;
+}
+.extra40-top {
+	margin-top: 40px;
+}
+.brand-logo {
+	width: 40vw;
+	max-width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+.nav-pills:not(.flex-column) .nav-item .nav-link {
+	padding-top: 23px !important;
+}
+.nav-pills.nav-pills-just-icons .nav-item .nav-link {
+	border-radius: 9px;
+	height: 60px;
+	width: 170px;
+	max-width: 170px;
+}
+.caluga {
+	margin: 0 auto;
+}
+.media-body {
+	padding-left: 20px;
+}
+
+.forty-top {
+	margin-top: 40px;
+}
+
+.txt-left {
+	text-align: left;
+}
+
+.page-header.page-header-small {
+    min-height: 10vh !important;
+    max-height: 100vh !important;
+    height: auto;
+}
