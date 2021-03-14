@@ -1,7 +1,7 @@
 <?php
 
 // grab recaptcha library
-require_once "recaptchalib.php";
+require_once "parts/recaptchalib.php";
 // your secret key
 $secret = "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
 // empty response
@@ -65,7 +65,8 @@ $arr = array($hora, $ip, $ua, $name, $phone, $email, $subject, $message);
 $contacto = implode("\t", $arr) . "\n";
 file_put_contents($namelog, $contacto, FILE_APPEND | LOCK_EX);
 // Fin de cambios
-header("Location: gracias.html");
+header("Location: /gracias.php");
+echo "llegó";
 echo "Hi " . $_POST["name"] . " (" . $_POST["email"] . "), thanks for submitting the form!";
 
 ?>

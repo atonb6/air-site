@@ -27,7 +27,7 @@
                 <!-- <i class="now-ui-icons users_circle-08"></i> -->
               </span>
             </div>
-            <input class="form-control" type="number" name="phone" placeholder="56 9 1234 5678" placeholder="Teléfono" required>
+            <input class="form-control" type="tel" name="phone" placeholder="56 9 1234 5678" placeholder="Teléfono" required>
           </div>
           <div class="input-group input-lg">
             <div class="input-group-prepend">
