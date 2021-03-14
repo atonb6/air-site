@@ -5,13 +5,14 @@ $(document).ready(function (e){
         $('#send-message').hide();
         $('#loader-icon').show();
         $.ajax({
-            url: "form.php",
+            url: "parts/form.php",
             type: "POST",
             dataType:'json',
             data: {
             "name":$('input[name="name"]').val(),
             "email":$('input[name="email"]').val(),
             "phone":$('input[name="phone"]').val(),
+            "subject":$('input[name="subject"]').val(),
             "content":$('textarea[name="content"]').val(),
             "g-recaptcha-response":$('textarea[id="g-recaptcha-response"]').val()},				
             success: function(response){

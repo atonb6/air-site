@@ -1,4 +1,4 @@
-<form class="contact-form recaptchaForm" action="" method="post" novalidate="novalidate">
+<form id="frmContact" class="contact-form recaptchaForm" action="" method="post" novalidate="novalidate">
   <div class="section section-contact-us text-center" id="contacto">
     <div class="container">
       <h2 class="title">Cotiza con nosotros</h2>
@@ -42,6 +42,7 @@
           </div>
           <div class="g-recaptcha" data-sitekey="<?php echo SITE_KEY; ?>"></div>
           <br />
+
           <div class="send-button">
             <button class="btn btn-blue btn-round btn-block btn-lg" type="submit">Enviar</button>
           </div>
