@@ -28,7 +28,6 @@ if ($_POST) {
     if (!$resp->isSuccess()) {
 /*       $output = json_encode(array('type' => 'error', 'text' => '<b>Captcha</b> Validation Required!'));
       die($output); */
-      echo 'Success! Thanks for submitting';
     }
   }
 
@@ -47,8 +46,10 @@ if ($_POST) {
 
  /*  $arr = array($hora, $ip, $ua, $name, $phone, $email, $subject, $message);
   $contacto = implode("\t", $arr) . "\n";
+
   file_put_contents($namelog, $contacto, FILE_APPEND | LOCK_EX); */
+
   // Fin de cambios
 
-  /* header("Location: parts/gracias.php"); */
+  header("Location: parts/gracias.php");
 }
