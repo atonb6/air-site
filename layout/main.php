@@ -8,7 +8,7 @@
     <?php include('parts/slider.php') ?>
     <?php include('parts/about.php') ?>
     <?php include('parts/services.php') ?>
-    <?php include('parts/brands.php') ?>
+    <?php include('parts/brand.php') ?>
     <?php include('parts/teams.php') ?>
     <?php include('parts/testimony.php') ?>
 
