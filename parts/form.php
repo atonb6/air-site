@@ -1,7 +1,7 @@
 <?php require('constant.php');?>
 <?php require('form-controll.php');?>
 
-<form class="contact-form recaptchaForm" action="gracias.php" method="post">
+<form class="contact-form recaptchaForm" action="parts/gracias.php" method="post">
   <div class="section section-contact-us text-center" id="contacto">
     <div class="container">
       <h2 class="title">Cotiza con nosotros</h2>
