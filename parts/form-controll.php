@@ -45,5 +45,5 @@ if ($_POST) {
   $contacto = implode("\t", $arr) . "\n";
   file_put_contents($namelog, $contacto, FILE_APPEND | LOCK_EX);
   // Fin de cambios
-  header("Location: gracias.html");
+  header("Location: parts/gracias.php");
 }
