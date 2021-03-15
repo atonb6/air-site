@@ -25,10 +25,10 @@ if ($_POST) {
 
     $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-    if (!$resp->isSuccess()) {
+/*     if (!$resp->isSuccess()) {
       $output = json_encode(array('type' => 'error', 'text' => '<b>Captcha</b> Validation Required!'));
       die($output);
-    }
+    } */
   }
 
 
@@ -39,10 +39,10 @@ if ($_POST) {
 
   mail($mailTo, $subject, $txt, $headers);
   // Cambios solicitados acá
-/*   $namelog = date("Ymd");
+  $namelog = date("Ymd");
   $ip = get_ip_address();
   $ua = $_SERVER['HTTP_USER_AGENT'];
-  $hora = date("d-m-Y H:i:s"); */
+  $hora = date("d-m-Y H:i:s");
 
   $arr = array($hora, $ip, $ua, $name, $phone, $email, $subject, $message);
   $contacto = implode("\t", $arr) . "\n";
