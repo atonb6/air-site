@@ -51,10 +51,6 @@ if ($_POST) {
 
   // Fin de cambios
 
-  header("Location: gracias.php");
+/*   header("Location: gracias.php"); */
 
-  if(isset($email)){
-    echo 'Success! Thanks for submitting';
- }
- 
 }
