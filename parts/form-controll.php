@@ -8,9 +8,9 @@ if ($_POST) {
   $content   = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
   $subject   = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
 
-  foreach ($_POST as $key => $value) {
+/*   foreach ($_POST as $key => $value) {
     echo '<p><strong>' . $key.':</strong> '.$value.'</p>';
-  }
+  } */
   
 
   //reCAPTCHA validation
@@ -22,24 +22,24 @@ if ($_POST) {
 
     $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-    if (!$resp->isSuccess()) {
+/*     if (!$resp->isSuccess()) {
       $output = json_encode(array('type' => 'error', 'text' => '<b>Captcha</b> Validation Required!'));
       die($output);
-    }
+    } */
   }
 
 
 
   $mailTo = $SENDER_EMAIL;
   $headers = "From: " . $email;
-  $txt = "Formulario de " . $name . ".\n\nTeléfono " . $phone . "\n\n" . $message;
+  $txt = "Formulario de " . $name . ".\n\nTel&eacute;fono " . $phone . "\n\n" . $message;
 
   mail($mailTo, $subject, $txt, $headers);
   // Cambios solicitados acá
-  $namelog = date("Ymd") . ".csv";
+/*   $namelog = date("Ymd");
   $ip = get_ip_address();
   $ua = $_SERVER['HTTP_USER_AGENT'];
-  $hora = date("d-m-Y H:i:s");
+  $hora = date("d-m-Y H:i:s"); */
 
   $arr = array($hora, $ip, $ua, $name, $phone, $email, $subject, $message);
   $contacto = implode("\t", $arr) . "\n";
