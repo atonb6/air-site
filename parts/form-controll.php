@@ -1,4 +1,7 @@
 <?php
+
+mb_internal_encoding('UTF-8');
+
 if ($_POST) {
   require('constant.php');
 
