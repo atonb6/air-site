@@ -25,17 +25,17 @@ if ($_POST) {
 
     $resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-/*     if (!$resp->isSuccess()) {
+    if (!$resp->isSuccess()) {
       $output = json_encode(array('type' => 'error', 'text' => '<b>Captcha</b> Validation Required!'));
       die($output);
-    } */
+    }
   }
 
 
 
   $mailTo = $SENDER_EMAIL;
   $headers = "From: " . $email;
-  $txt = "Formulario de " . $name . ".\n\nTel&eacute;fono " . $phone . "\n\n" . $message;
+  $txt = "Formulario de " . $name . ".\n\nTeléfono " . $phone . "\n\n" . $message;
 
   mail($mailTo, $subject, $txt, $headers);
   // Cambios solicitados acá
