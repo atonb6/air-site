@@ -51,5 +51,5 @@ if ($_POST) {
 
   // Fin de cambios
 
-  header("Location: parts/gracias.php");
+  header("Location: gracias.php");
 }
