@@ -49,6 +49,7 @@
 <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
 <script src="assets/js/datepicker.js" type="text/javascript"></script>
 <script src="assets/js/now-ui-kit.js" type="text/javascript"></script>
+<script src="assets/js/main.js" type="text/javascript"></script>
 
 
 

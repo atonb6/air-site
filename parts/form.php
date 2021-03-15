@@ -1,6 +1,7 @@
 <?php require('constant.php');?>
+<?php require('form-controll.php');?>
 
-<form class="contact-form recaptchaForm" action="parts/form-controll.php" method="post">
+<form class="contact-form recaptchaForm" action="" method="post">
   <div class="section section-contact-us text-center" id="contacto">
     <div class="container">
       <h2 class="title">Cotiza con nosotros</h2>
@@ -42,10 +43,10 @@
           <div class="textarea-container">
             <textarea class="form-control" rows="4" cols="80" name="message" placeholder="Escribe un comentario..." required></textarea>
           </div>
-          <div class="g-recaptcha" data-sitekey="<?php echo $SITE_KEY ?>"></div>
+          <div class="g-recaptcha" data-sitekey="<?php echo $SITE_KEY ?>" required></div>
           <br />
           <div class="send-button">
-            <button class="btn btn-blue btn-round btn-block btn-lg" type="submit">Enviar</button>
+            <button class="btn btn-blue btn-round btn-block btn-lg" type="submit" >Enviar</button>
           </div>
           <br></br>
           <h5>Contáctanos directamente en</h5>
